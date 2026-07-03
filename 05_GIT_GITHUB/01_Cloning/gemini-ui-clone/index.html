@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Gemini</title>
+    <link rel="icon" href="./assets/gemini-color.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <input type="checkbox" id="sidebar-toggle" />
+
+      <div class="overflow-Container">
+        
+        <div class="top-icons">
+          <label
+            for="sidebar-toggle"
+            class="material-symbols-outlined"
+            style="font-size: 20px"
+          >
+            menu
+          </label>
+          <span class="material-symbols-outlined" style="font-size: 20px">
+            search
+          </span>
+        </div>
+
+        <!-- New Chat section -->
+        <div class="chat-header-container">
+          <div class="new-chat-section">
+            <div class="left">
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                edit_square
+              </span>
+              <button class="new-mess-btn">New chat</button>
+            </div>
+          </div>
+          <div class="right">
+            <span class="material-symbols-outlined" style="font-size: 20px">
+              chat_dashed
+            </span>
+          </div>
+        </div>
+
+        <!-- My Stuff and Gems -->
+        <div class="sidebar-middle">
+          <div class="myStuff">
+            <button class="My-Stuff-btn">My Stuff</button>
+            <span class="material-symbols-outlined" style="font-size: 20px">
+              chevron_right
+            </span>
+          </div>
+          <div class="gems">
+            <button class="My-gems-btn">Gems</button>
+            <span class="material-symbols-outlined" style="font-size: 20px">
+              chevron_right
+            </span>
+          </div>
+
+          <!-- Chat section -->
+          <div class="chats-messages">
+            <label for="chats">Chats</label>
+          </div>
+          <div class="recent-chats">
+            <div class="chat-item">
+              <span>How can I help you today?</span>
+            </div>
+          </div>
+          <div class="recent-chats">
+            <div class="chat-item">
+              <span>Good morning Abhishek! 🌄</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="Footer-sections">
+          <div class="new-footer-section">
+            <div class="footer">
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                settings
+              </span>
+              <button class="new-mess-btn">Settings & help</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-overlay"></div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="top-bar-actions">
+          <!-- Hamburger -->
+          <label for="sidebar-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+
+          <div class="left-action">
+            <img src="./assets/gemini-text.png" />
+          </div>
+          <div class="right-action">
+            <label for="text">PRO</label>
+            <a href="#"><img src="./assets/profile.png" id="profile" /></a>
+          </div>
+        </div>
+
+        <!-- Top Sections -->
+        <div class="top-sections">
+          <div class="greeting">
+            <img src="./assets/GeminiSvg.svg" id="gemini-logo" />
+            <h1>Hi Abhishek</h1>
+          </div>
+          <div class="content-container">
+            <h1>Where should we start?</h1>
+          </div>
+        </div>
+
+        <!-- Text Input -->
+        <div class="text-input-field">
+          <div class="text-area">
+            <textarea
+              name="Ask gemini"
+              id="input-sec"
+              placeholder="Ask Gemini 3"
+            ></textarea>
+          </div>
+          <div class="leading-actions">
+            <span class="material-symbols-outlined"> add </span>
+            <div class="tools-container">
+              <span class="material-symbols-outlined">tune</span>
+              <span>Tools</span>
+            </div>
+
+            <div class="right-controls">
+              <div class="model-selector">
+                <input
+                  type="checkbox"
+                  id="model-toggle"
+                  class="model-toggle-checkbox"
+                />
+                <label for="model-toggle" class="model-trigger">
+                  Pro
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 20px"
+                    >keyboard_arrow_down</span
+                  >
+                </label>
+                <div class="model-options">
+                  <div class="model-option">
+                    <div class="option-text">
+                      <div class="model-name">Pro</div>
+                      <div class="model-meta">Best for complex tasks</div>
+                    </div>
+                  </div>
+                  <div class="model-option">
+                    <div class="option-text">
+                      <div class="model-name">Fast</div>
+                      <div class="model-meta">Answers quickly</div>
+                    </div>
+                  </div>
+                  <div class="model-option">
+                    <div class="option-text">
+                      <div class="model-name">Thinking</div>
+                      <div class="model-meta">Solves complex problems</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mic-icon">
+                <span class="material-symbols-outlined">mic</span>
+              </div>
+              <div class="send-icon">
+                <span class="material-symbols-outlined">send</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zero State -->
+        <div class="zero-state">
+          <button><img src="./assets/Nano-Banana.png" />Create Images</button>
+          <button>Create Video</button>
+          <button>Write anything</button>
+          <button>Help me learn</button>
+          <button>Boost my day</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Gemini UI Clone — Pure HTML & CSS
+  Purpose: Learning-focused frontend project
+  Created by: Abhishek kumar
+  Date: 10 January 2026 -->
