@@ -1,0 +1,16 @@
+.container {
+  color: brown;
+  background-color: aqua;
+}
+.container h2 {
+  text-decoration: underline;
+}
+.Buttons{
+  padding: 4;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.btn btn-primary btn-outline-link{
+  color: violet;
+}
