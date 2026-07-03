@@ -1,0 +1,20 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  color: #1b73e4;
+}
+/* /* button:active {
+  background-color: black;
+  color: white; */
+#searchbtn {
+  background-color: black;
+  color: white;
+}
+
+#login register {
+  background-color: aqua;
+}
+div{
+  height: 50px;
+}

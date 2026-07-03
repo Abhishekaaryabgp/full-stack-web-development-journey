@@ -1,0 +1,86 @@
+* {
+  font-family: "sans-serif", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial;
+}
+/* you can use direct if yoiu want same properties in multiple tags without writing multiple times */
+
+h3 {
+  color: #b92b27;
+}
+#login {
+  background-color: #b92b27;
+  color: white;
+}
+/* #for ids */
+#signup {
+  background-color: #b92b27;
+  color: white;
+}
+/* .for class */
+.Details {
+  font-style: italic;
+  color: black;
+}
+.up {
+  background-color: #000000;
+  color: aquamarine;
+}
+.ans {
+  background-color: rgb(79, 250, 5);
+  color: rgb(51, 0, 139);
+}
+#Useless {
+  color: darkolivegreen;
+}
+/* decendent selector like child */
+.follow a {
+  background-color: cyan;
+  color: #b92b27;
+}
+p a {
+  background-color: cyan;
+  color: #b92b27;
+}
+
+/* we can go upto level */
+nav ul li a {
+  color: darkgreen;
+}
+p + h3 {
+  text-decoration: underline;
+}
+/* child selector we can go upto 1 level only */
+main > p {
+  color: red;
+}
+/* Attributes selctores */
+input[type="text"] {
+  color: red;
+}
+input[type="password"] {
+  color: rgb(69, 248, 29);
+}
+button:hover {
+  background-color: black;
+  color: greenyellow;
+}
+button:active {
+  background-color: coral;
+  color: lime;
+}
+p:active {
+  font-weight: bold;
+  color: royalblue;
+}
+/* the plus sign is used to show to parent child relation  */
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: Red;
+}
+
+h3:active {
+  text-decoration: none;
+}
+h1::first-letter{
+  color: teal;
+}

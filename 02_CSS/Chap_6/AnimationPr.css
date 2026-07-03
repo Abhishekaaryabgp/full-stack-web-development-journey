@@ -1,0 +1,29 @@
+.roundBox {
+  width: 500px;
+  height: 300px;
+  background-color: lightblue;
+  animation: Round 4s ease-in-out 0s infinite;
+  text-align: center;
+}
+/* @keyframes Round {
+  from {
+    width: 500px;
+    height: 300px;
+  }
+  to {
+    border-radius: 50%;
+  }
+} */
+@keyframes Round {
+  0% {
+    width: 500px;
+    height: 300px;
+  }
+  50% {
+    background-color: darkred;
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}

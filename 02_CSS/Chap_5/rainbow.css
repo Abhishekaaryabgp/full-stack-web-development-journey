@@ -1,0 +1,28 @@
+#container {
+  height: 300px;
+  width: 70%;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: flex; /* flex container fits in the parent div */
+  /* flex-direction: row; by default it will be set by row */
+  flex-direction: column; /* colmn flex will change the directions */
+  justify-content: flex-start; /* main axis alignment */
+  flex-wrap: wrap;
+  /* align-items: first baseline; */
+  align-content: flex-start;
+}
+h1 {
+  text-align: center;
+  color: #613831;
+}
+#container div {
+  height: 60px;
+  width: 30%;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+#red {
+  align-self: flex-start;
+  flex-grow: 1;
+}

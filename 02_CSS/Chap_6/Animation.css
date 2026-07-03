@@ -1,0 +1,39 @@
+.box {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-color: black;
+  color: greenyellow;
+  animation-name: HeaderAnimation;
+  transition: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0.5ms;
+  animation-iteration-count: infinite;
+  border-radius: 30px;
+  animation-direction: alternate;
+}
+@keyframes HeaderAnimation {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+@keyframes headerColor {
+  from {
+    color: black;
+  }
+  to {
+    color: blueviolet;
+  }
+}
+h1 {
+  animation-name: headerColor;
+  transition: ease-in-out;
+  animation-duration: 1s;
+  animation-delay: 0.5ms;
+  animation-iteration-count: infinite;
+  border-radius: 30px;
+  animation-direction: alternate-reverse;
+}

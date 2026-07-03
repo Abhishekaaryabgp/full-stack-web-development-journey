@@ -1,0 +1,14 @@
+/* below practice question the id = 0 , class = 2 ,elements = 1 = 21 */
+div.greetDiv .greet {
+  color: green;
+}
+/* below practice question the id = 0 , class = 2 ,elements = 1 = 21 */
+.greetDiv p.greet {
+  color: blue;
+}
+/* below practice question the id = 0 , class = 2 ,elements = 0 = 20 */
+.greetDiv .greet {
+  color: red;
+}
+/* the 21 = 21 is same so now the Specificity will be check the specificity will take the second one in 
+this case the blue one is color so the (Hello Worlds will be print in Blue color) */

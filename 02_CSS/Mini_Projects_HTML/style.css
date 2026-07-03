@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main_box {
+  background-image: url(photo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+/* --- BUTTON ONE (Hamburger) --- */
+.btn_one i {
+  color: white;
+  font-size: 30px;
+  font-weight: 700; /* Fixed */
+  position: absolute;
+  left: 16px;
+  line-height: 70px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+.btn_one i:hover {
+  color: greenyellow;
+  transform: scale(1.2);
+}
+
+/* --- SIDEBAR --- */
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: all 0.5s linear;
+  z-index: 99; 
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  line-height: 70px;
+  height: 60px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 50px;
+  color: greenyellow;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* --- BUTTON TWO (Close) --- */
+.sidebar_menu .btn_two i {
+  color: yellow;
+  font-size: 30px;
+  line-height: 55px;
+  position: absolute;
+  left: 270px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar_menu .btn_two i:hover {
+  color: red;
+  transform: rotate(90deg) scale(1.2);
+}
+
+/* --- MENU ITEMS --- */
+.sidebar_menu .menu {
+  color: greenyellow;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 11px 20px;
+  list-style: none;
+  transition: 0.3s; /* Added for smooth hover on list items */
+}
+
+.sidebar_menu .menu li a {
+  padding-right: 90px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Your existing hover for list items */
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding-left: 30px; /* Changed from padding: 5px to padding-left shift */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* --- SOCIAL MEDIA --- */
+.sidebar_menu .social_media {
+  color: white;
+  padding: 5px;
+  left: 18%;
+  position: absolute;
+  bottom: 18px;
+}
+
+.social_media ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.social_media ul i {
+  font-size: 25px;
+  color: whitesmoke;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.social_media ul i:hover {
+  font-size: 40px;
+  color: #ff0000;
+  opacity: 1;
+}
+
+/* --- FUNCTIONALITY --- */
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .btn_one i {
+  opacity: 0;
+  pointer-events: none; /* Prevents clicking the hidden menu button */
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+  transition: 1s;
+}

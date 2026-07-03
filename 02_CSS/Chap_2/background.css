@@ -1,0 +1,9 @@
+div {
+  margin: 10px auto;
+  background-position: center;
+  background-color: maroon;
+  width: 1280px;
+  height: 720px;
+  background-image: url(Abhi.png);
+  background-size: contain;
+}

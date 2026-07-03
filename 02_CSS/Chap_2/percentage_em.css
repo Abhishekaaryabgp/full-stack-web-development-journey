@@ -1,0 +1,23 @@
+/* #outer {
+  width: 400px;
+  height: 200px;
+  background-color: green;
+  border: solid black 2px;
+  font-size: 20px;
+}
+#inner {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+  border: solid black 2px;
+  font-size: 1em;
+} */
+button {
+  font-size: 60px;
+  border: solid darkgreen 2px;
+  border-radius: 5px;
+  /* padding-left: 1em;
+  /* in the avobe padding left when you use 30px on the website it will not increase padding so in that case use _1em */
+  /* padding-right: 1em; */
+  padding: 1rem;
+}

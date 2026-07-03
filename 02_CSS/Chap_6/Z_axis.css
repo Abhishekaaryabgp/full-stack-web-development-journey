@@ -1,0 +1,26 @@
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-color: 50% pink;
+  text-align: center;
+}
+.one {
+  background-color: aquamarine;
+  position: relative;
+  z-index: 1;
+  bottom: 50px;
+}
+.two {
+  background-color: salmon;
+  position: relative;
+  z-index: 2;
+  bottom: 50px;
+}
+.three {
+  background-color: violet;
+  position: static; /* on static the z-index wont word also on default */
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+}

@@ -1,0 +1,27 @@
+div {
+  display: inline-block;
+}
+.card {
+  width: 200px; /* The card will now auto-adjust its height */
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  /* overflow: hidden; */
+  /* This will hide anything that overflows the card's boundaries */
+}
+
+img {
+  height: 200px; /* Set a fixed height for the image */
+  width: 100%; /* Image will fill the card's width */
+  object-fit: cover; /* This is the key to making the images fit perfectly */
+  border-radius: 4px 4px 0 0;
+}
+.descrip {
+  text-align: center;
+  padding: 5px 10px;
+}
+.card:hover {
+  box-shadow: 0px 10px 18px black;
+  transition: 50ms;
+}

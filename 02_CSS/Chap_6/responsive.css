@@ -1,0 +1,20 @@
+div {
+  background-color: lightblue;
+  border: 2px solid black;
+  color: darkred;
+  text-align: center;
+}
+@media (width: 100px) and (min-width: 300px) and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: brown;
+    background-color: yellow;
+  }
+}
+
+@media (orientation: portrait) {
+  h1 {
+    color: blue;
+  }
+}
