@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <h1>This page belongs to : @<%= username %></h1>
+    <button>Follow</button>
+     <button>Message</button>
+    <!-- loop in ejs -->
+     <h2>Accounts that follows you </h2>
+     <ul>
+         <% for (let users of followers){ %>
+            <!-- below to get user as output you need to use <%=  %> -->
+             <li><%= users %></li> 
+         <% } %>
+     </ul>
+   
+  </body>
+</html>
