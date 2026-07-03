@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Practice</title>
+    <link rel="stylesheet" href="QPR.css" />
+  </head>
+  <body>
+    <h1>Just Question 01</h1>
+    <input type="text" /> <br />
+
+    <div id="scroll-box">
+      <p>Scroll me!</p>
+    </div>
+    <p id="output">Waiting on scroll events...</p>
+
+    <script>
+      // Method 1: Using window.onload (overwrites previous handlers if reassigned)
+      window.onload = function () {
+        console.log("Page fully loaded with all resources.");
+      };
+
+      // Method 2: Using addEventListener (preferred, allows multiple handlers)
+      window.addEventListener("load", function () {
+        console.log("Load event fired - all resources are ready.");
+      });
+    </script>
+    <script src="Q_Practice.js"></script>
+  </body>
+</html>
