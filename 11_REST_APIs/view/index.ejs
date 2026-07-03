@@ -1,0 +1,27 @@
+<!--  ejs is just like html plus js both you can write you already learned  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Quara posts:</h2>
+   <% for(post of posts){ %>
+        <div class="post">
+            <h4 class="user">@<%= post.username %></h4> 
+            <h5>class="cont" <%= post.content %></h5>
+             <a href="http://localhost:8080/posts/<%= post.id %>">  see in details</a> <br>
+             <a href="http://localhost:8080/posts/<%= post.id %>/edit"> Edit Content</a>
+             <br>
+             <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+              <button style="border:1 px solid black; border-radius: 20px;">delete post</button>
+             </form>
+             
+        </div>
+    <% } %> <br>
+    <a href="http://localhost:8080/posts/new">Create new post</a>
+  </body>
+  </html>

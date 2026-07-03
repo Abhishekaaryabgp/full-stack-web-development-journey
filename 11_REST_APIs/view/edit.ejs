@@ -1,0 +1,23 @@
+<!-- creating for edits -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+  </head>
+  <body>
+    <h2>Edit your posts</h2>
+    <p>Post username : <%=post.username%></p>
+    <p>Post id : <%=post.id%></p>
+
+    <form method="post" action="/posts/<%=post.id %>?_method=PATCH">
+      <!-- sending patch request we can send delete req pathch etc -->
+      <textarea rows="10" col="30" name="content">
+<%= post.content %> </textarea
+      >
+      <br />
+      <button>submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+/* we can style our index.ejs  */
+h2 {
+    color: #889612;
+}
+.user{
+    color: blueviolet;
+}
