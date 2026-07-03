@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+
+<body>
+    <form action="/server">
+        <h1>Age Verification</h1>
+        <label for="age">i am 18+</label>
+        <input type="checkbox" name="age" id=" age">
+        <button>Submit</button>
+
+    </form>
+    <hr>
+    <h1>Fruits</h1>
+    <form action="/Server">
+        <input type="radio" name="fruits" id="apple" placeholder="apple" value="apple">
+        <label for="apple">Apple</label>
+
+        <input type="radio" name="fruits" id="banana" placeholder="banana" value="banana">
+        <label for="banana">Banana</label>
+
+        <input type="radio" name="fruits" id="grapes" placeholder="grapes" value="grapes">
+        <label for="grapes">Grapes</label><br>
+        <button>Submit</button>
+        <hr>
+        <div>
+            <h1>Dropdown Menu </h1>
+            <select name="Country" id="Country">
+                <option value="Ind" selected>India</option>
+                <option value="Jap">Japan</option>
+                <option value="chi">China</option>
+                <option value="rus">Russia</option>
+                <option value="ira">Iran</option>
+            </select>
+        </div>
+        <button>Submit</button>
+        <hr>
+        <div>
+            <h1>Range Detector</h1>
+            <input type="range" name="Volume" id="Vol" min="3" max="99">
+        </div>
+        <button>Submit</button>
+
+
+        <hr>
+        <div>
+            <h5>Write Reviews</h5>
+            <label for="Feedback">Please provide you Valuble feedback</label>
+            <textarea name="Feedback" id="comments" rows="3" cols="100"></textarea>
+        </div>
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
